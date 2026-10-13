@@ -509,6 +509,29 @@ body{
     color: #800020;
 }
 
+.whatsapp-fixo{
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 1100;
+    width: 64px;
+    height: 64px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: #cdb8b8;
+    color: #1a1a1a;
+    font-size: 34px;
+    text-decoration: none;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, .25);
+    transition: transform .2s ease, background .2s ease, color .2s ease;
+}
+.whatsapp-fixo:hover{
+    transform: scale(1.1);
+    background: #800020;
+    color: #fff;
+}
+
 @media (max-width: 1200px){
     .produtos-grid{
         grid-template-columns: 1fr;
