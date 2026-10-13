@@ -345,7 +345,7 @@ body{
 }
 .etapa img{
     width: 100%;
-    height: 480px;
+    height: 500px;
     object-fit: cover;
     display: block;
     margin-bottom: 30px;
