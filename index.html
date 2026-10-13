@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mucis heal your soul</title>
+    <title>Sonder Company</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,13 +14,13 @@
                     <a href="#"><img src="imgs/logo.jpg" alt="Sonder"></a>
                 </div>
                 <div class="menu">
-                    <ul>
-                        <li><a href="index.html">Início</a></li>
-                        <li><a href="produtos.html">Produtos</a></li>
-                        <li><a href="sobre.html">Sobre Nós</a></li>
-                        <li><a href="contato.html">Contato</a></li>
-                        <li><a href="#" class="duvidas">Dúvidas?</a></li>
-                    </ul>
+                  <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="https://www.whatsapp.com/" target="_blank">Contato</a></li>
+                    <li><a href="https://www.whatsapp.com/" class="duvidas" target="_blank" rel="noopener noreferrer">Dúvidas?</a></li>
+                  </ul>
                 </div>
             </div>
         </header>
@@ -37,35 +37,217 @@
     </section>
     <hr>
 <section class="mais-vendidos">
-    <h2>Mais Vendidos</h2>
-    <div class="produtos-grid">
-        <article class="produto">
-            <div class="capa">
-                <img src="imgs/discopanchiko.png" alt="" class="disco">
-                <img src="imgs/panchiko.png" alt="D>E>A>T>H>M>E>T>A>L" class="album">
-                <audio controls preload="none" src=""></audio>
-            </div>
-            <h3>D>E>A>T>H>M>E>T>A>L</h3>
-            <p class="preco">R$ 189,90</p>
-        </article>
-        <article class="produto">
-            <div class="capa">
-                <img src="imgs/discoblonde.png" alt="" class="disco">
-                <img src="imgs/blonde.jpg" alt="Blonde" class="album">
-            </div>
-            <h3>Blonde</h3>
-            <p class="preco">R$ 249,90</p>
-        </article>
-        <article class="produto">
-            <div class="capa">
-                <img src="imgs/discoyeah.png" alt="" class="disco">
-                <img src="imgs/ohyeah.jpg" alt="Oh yeah?" class="album">
-            </div>
-            <h3>Oh yeah?</h3>
-            <p class="preco">R$ 169,90</p>
-        </article>
-    </div>
+  <h2>Mais Vendidos</h2>
+
+  <div class="produtos-grid">
+
+    <!-- CARD 1 -->
+    <article class="card card-deathmetal">
+      <button class="btn-curtir" aria-label="Curtir">
+        <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-9.5-9C1 8.5 3 5 6.5 5c2 0 3.5 1 5.5 3 2-2 3.5-3 5.5-3C21 5 23 8.5 21.5 12 19 16.5 12 21 12 21z"/></svg>
+      </button>
+      <div class="capa">
+        <img class="album" src="imgs/panchiko.png" alt="Capa D>E>A>T>H>M>E>T>A>L">
+        <img class="disco" src="imgs/discopanchiko.png" alt="">
+      </div>
+      <div class="info">
+        <h3>D>E>A>T>H>M>E>T>A>L</h3>
+        <p class="preco">R$ 189,90</p>
+        <button class="btn-carrinho">Adicionar ao carrinho</button>
+      </div>
+    </article>
+
+    <!-- CARD 2 -->
+    <article class="card card-blonde">
+      <button class="btn-curtir" aria-label="Curtir">
+        <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-9.5-9C1 8.5 3 5 6.5 5c2 0 3.5 1 5.5 3 2-2 3.5-3 5.5-3C21 5 23 8.5 21.5 12 19 16.5 12 21 12 21z"/></svg>
+      </button>
+      <div class="capa">
+        <img class="album" src="imgs/blonde.jpg" alt="Capa Blonde">
+        <img class="disco" src="imgs/discoblonde.png" alt="">
+      </div>
+      <div class="info">
+        <h3>Blonde</h3>
+        <p class="preco">R$ 249,90</p>
+        <button class="btn-carrinho">Adicionar ao carrinho</button>
+      </div>
+    </article>
+
+    <!-- CARD 3 -->
+    <article class="card card-ohyeah">
+      <button class="btn-curtir" aria-label="Curtir">
+        <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-9.5-9C1 8.5 3 5 6.5 5c2 0 3.5 1 5.5 3 2-2 3.5-3 5.5-3C21 5 23 8.5 21.5 12 19 16.5 12 21 12 21z"/></svg>
+      </button>
+      <div class="capa">
+        <img class="album" src="imgs/ohyeah.jpg" alt="Capa Oh yeah?">
+        <img class="disco" src="imgs/discoyeah.png" alt="">
+      </div>
+      <div class="info">
+        <h3>Oh yeah?</h3>
+        <p class="preco">R$ 169,90</p>
+        <button class="btn-carrinho">Adicionar ao carrinho</button>
+      </div>
+    </article>
+
+    <!-- CARD 4 -->
+    <article class="card card-ohyeah">
+      <button class="btn-curtir" aria-label="Curtir">
+        <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-9.5-9C1 8.5 3 5 6.5 5c2 0 3.5 1 5.5 3 2-2 3.5-3 5.5-3C21 5 23 8.5 21.5 12 19 16.5 12 21 12 21z"/></svg>
+      </button>
+      <div class="capa">
+        <img class="album" src="imgs/freudian.jpg" alt="Capa Oh yeah?">
+        <img class="disco" src="imgs/discofreudian.png" alt="">
+      </div>
+      <div class="info">
+        <h3>Oh yeah?</h3>
+        <p class="preco">R$ 169,90</p>
+        <button class="btn-carrinho">Adicionar ao carrinho</button>
+      </div>
+    </article>
+  </div>
 </section>
+<hr>
+<section class="porque">
+  <div class="porque-texto">
+    <h2>Por que comprar na Sonder?</h2>
+    <p class="porque-desc">
+      Cada disco é escolhido com carinho, conferido antes do envio
+      e embalado para chegar perfeito na sua vitrola.
+    </p>
+
+    <div class="destaques">
+      <div class="destaque">
+        <span class="icone">💿</span>
+        <h3>Discos selecionados</h3>
+        <p>Lançamentos e raridades verificados, com a condição de cada vinil descrita no anúncio.</p>
+      </div>
+      <div class="destaque">
+        <span class="icone">📦</span>
+        <h3>Envio seguro</h3>
+        <p>Embalagem reforçada para o disco e a capa chegarem sem dano, para todo o Brasil.</p>
+      </div>
+    </div>
+
+    <a href="sobre.html" class="btn-saiba">Saiba mais</a>
+  </div>
+
+  <div class="porque-img">
+    <img src="imgs/loja.jpg" alt="Loja Sonder">
+  </div>
+</section>
+<hr>
+<section class="processo">
+  <h2>Do clique à sua vitrola, <br>em 3 passos simples.</h2>
+
+  <div class="processo-grid">
+    <article class="etapa">
+      <img src="imgs/blonde.jpg" alt="Escolha do disco">
+      <h3>Escolha o seu disco favorito.</h3>
+      <p>Navegue pelo catálogo, compare as edições e adicione ao carrinho.</p>
+      <a href="produtos.html" class="link-seta">Ver produtos <span></span></a>
+    </article>
+
+    <article class="etapa">
+      <img src="imgs/caixa" alt="Embalagem do disco">
+      <h3>Conferimos e embalamos com cuidado.</h3>
+      <p>Cada vinil é inspecionado e protegido para chegar sem nenhum dano.</p>
+      <a href="sobre.html" class="link-seta">Saiba mais <span></span></a>
+    </article>
+
+    <article class="etapa">
+      <img src="imgs/entregue.jpg" alt="Entrega">
+      <h3>Receba em casa e aperte o play.</h3>
+      <p>Enviamos para todo o Brasil e acompanhamos a entrega até o fim.</p>
+      <a href="https://www.whatsapp.com/" target="_blank" class="link-seta">Fale conosco <span></span></a>
+    </article>
+  </div>
+</section>
+<hr>
+<!-- ===== DEPOIMENTOS ===== -->
+<section class="depoimentos">
+  <h2>Depoimentos de Clientes</h2>
+  <p class="sub">Veja o que quem já comprou na Sonder tem a dizer!</p>
+
+  <div class="depoimentos-grid">
+    <article class="depoimento">
+      <div class="estrelas">★★★★★</div>
+      <p class="texto">"Chegou perfeito, o disco estava impecável e a embalagem muito bem cuidada. Já estou de olho no próximo."</p>
+      <div class="autor">
+        <img src="imgs/arthur.png" alt="">
+        <div>
+          <strong>Erick Santiago</strong>
+          <span>Colecionador</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="depoimento">
+      <div class="estrelas">★★★★★</div>
+      <p class="texto">"Atendimento excelente e entrega rápida. O vinil tem exatamente a condição descrita no anúncio."</p>
+      <div class="autor">
+        <img src="imgs/gui.jpg" alt="">
+        <div>
+          <strong>Guilherme Hilton</strong>
+          <span>Cliente desde 2025</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="depoimento">
+      <div class="estrelas">★★★★★</div>
+      <p class="texto">"Achei uma edição que eu procurava há anos. Super recomendo a loja para quem ama vinil."</p>
+      <div class="autor">
+        <img src="imgs/frank.jpg" alt="">
+        <div>
+          <strong>Frank Ocean</strong>
+          <span>DJ</span>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<hr>
+<!-- ===== CONTATO ===== -->
+<section class="contato" id="contato">
+  <h2>Entre em contato</h2>
+  <p class="sub">Tem alguma dúvida sobre um disco ou um pedido? Fale com a gente.</p>
+
+  <div class="contato-grid">
+    <div class="contato-item">
+      <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+      <h3>E-mail</h3>
+      <p>Respondemos em até 24 horas, de segunda a sexta.</p>
+      <a href="#">contato@sonder.com</a>
+    </div>
+
+    <div class="contato-item">
+      <svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+      <h3>Telefone</h3>
+      <p>Atendimento por ligação ou WhatsApp em horário comercial.</p>
+      <a href="#">+55 (85) 99999-9999</a>
+    </div>
+
+    <div class="contato-item">
+      <svg viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+      <h3>Loja</h3>
+      <p>Venha conhecer o acervo e ouvir um disco antes de levar.</p>
+      <a href="#">Av. Washington Soares, 3663 - Torre 2 - 4º andar - Edson Queiroz, Fortaleza - CE, 60811-341</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <img src="imgs/logo.jpg" alt="Sonder">
+  <hr>
+  <p>© 2026 Sonder. Todos os direitos reservados.</p>
+</footer>
+
+<script>
+    document.querySelectorAll('.btn-curtir').forEach(btn => {
+        btn.addEventListener('click', () => btn.classList.toggle('ativo'));
+    });
+</script>
 </main>
 </div>
 </body>

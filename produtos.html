@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos Sonder</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .card{
+            justify-content: center;
+            gap: 50px;
+        }
+        .pagina-produtos{
+            padding: 80px 60px 110px;
+        }
+        .footer{
+            position: relative;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <header>
+        <div class="nav">
+            <div class="logo">
+                <a href="#"><img src="imgs/logo.jpg" alt="Sonder"></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="https://www.whatsapp.com/" target="_blank">Contato</a></li>
+                    <li><a href="https://www.whatsapp.com/" class="duvidas" target="_blank" rel="noopener noreferrer">Dúvidas?</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="pagina-produtos">
+            <h2>Nossos Produtos</h2>
+
+            <div class="produtos-grid">
+
+                <!-- CARD 1 -->
+                <article class="card card-deathmetal">
+                    <button class="btn-curtir" aria-label="Curtir">
+                        <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-9.5-9C1 8.5 3 5 6.5 5c2 0 3.5 1 5.5 3 2-2 3.5-3 5.5-3C21 5 23 8.5 21.5 12 19 16.5 12 21 12 21z"/></svg>
+                    </button>
+                    <div class="capa">
+                        <img class="album" src="imgs/panchiko.png" alt="Capa D>E>A>T>H>M>E>T>A>L">
+                        <img class="disco" src="imgs/discopanchiko.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>D>E>A>T>H>M>E>T>A>L</h3>
+                        <p class="preco">R$ 189,90</p>
+                        <button class="btn-carrinho">Adicionar ao carrinho</button>
+                    </div>
+                </article>
+
+                <!-- CARD 2 -->
+                <article class="card card-blonde">
+                    <button class="btn-curtir" aria-label="Curtir">
+                        <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-9.5-9C1 8.5 3 5 6.5 5c2 0 3.5 1 5.5 3 2-2 3.5-3 5.5-3C21 5 23 8.5 21.5 12 19 16.5 12 21 12 21z"/></svg>
+                    </button>
+                    <div class="capa">
+                        <img class="album" src="imgs/blonde.jpg" alt="Capa Blonde">
+                        <img class="disco" src="imgs/discoblonde.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Blonde</h3>
+                        <p class="preco">R$ 249,90</p>
+                        <button class="btn-carrinho">Adicionar ao carrinho</button>
+                    </div>
+                </article>
+
+                <!-- CARD 3 -->
+                <article class="card card-ohyeah">
+                    <button class="btn-curtir" aria-label="Curtir">
+                        <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-9.5-9C1 8.5 3 5 6.5 5c2 0 3.5 1 5.5 3 2-2 3.5-3 5.5-3C21 5 23 8.5 21.5 12 19 16.5 12 21 12 21z"/></svg>
+                    </button>
+                    <div class="capa">
+                        <img class="album" src="imgs/ohyeah.jpg" alt="Capa Oh yeah?">
+                        <img class="disco" src="imgs/discoyeah.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Oh yeah?</h3>
+                        <p class="preco">R$ 169,90</p>
+                        <button class="btn-carrinho">Adicionar ao carrinho</button>
+                    </div>
+                </article>
+
+                <!-- CARD 4 -->
+                <article class="card card-freudian">
+                    <button class="btn-curtir" aria-label="Curtir">
+                        <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-9.5-9C1 8.5 3 5 6.5 5c2 0 3.5 1 5.5 3 2-2 3.5-3 5.5-3C21 5 23 8.5 21.5 12 19 16.5 12 21 12 21z"/></svg>
+                    </button>
+                    <div class="capa">
+                        <img class="album" src="imgs/freudian.jpg" alt="Capa Freudian">
+                        <img class="disco" src="imgs/discofreudian.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Freudian</h3>
+                        <p class="preco">R$ 199,90</p>
+                        <button class="btn-carrinho">Adicionar ao carrinho</button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+<footer class="footer">
+        <img src="imgs/logo.jpg" alt="Sonder">
+        <hr>
+        <p>© 2026 Sonder. Todos os direitos reservados.</p>
+    </footer>
+</div>
+
+<script>
+    document.querySelectorAll('.btn-curtir').forEach(btn => {
+        btn.addEventListener('click', () => btn.classList.toggle('ativo'));
+    });
+</script>
+</body>
+</html>
